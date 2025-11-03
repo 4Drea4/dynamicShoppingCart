@@ -25,9 +25,13 @@ function removeItem(event) {
 //Add items to their cart dynamically.
 addProductButton.addEventListener("click", function () {
     const productName = productNameInput.value.trim();
+    const productPrice = productPriceInput.value.trim();
 
     if (productName === "") {
       alert("Please enter an item!");
+    if (productPrice === ""){
+        alert("Please enter a price!");
+    }
       return;
     }
 
@@ -37,8 +41,10 @@ addProductButton.addEventListener("click", function () {
     addButton.textContent = "Add";
     li.appendChild(addButton);
 
+
     cart.appendChild(li);
 });
 
 //View the items they have added, along with their prices and quantities.
+
 
