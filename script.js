@@ -3,8 +3,22 @@ const productPriceInput = document.getElementById('product-price');
 const addProductButton = document.getElementById('add-product');
 const cart = document.getElementById('cart');
 const totalPriceSpan = document.getElementById('total-price');
- 
+const product = document.createElement('li');
+
 let totalPrice = 0;
+
+
+//Add items
+ addProductButton.addEventListener('click', (event) =>{
+  document.createElement('button');
+  product.createElement('li');
+
+
+ }
+)
+ 
+
+
  
 // Function to update the total price
 function updateTotalPrice(amount) {
