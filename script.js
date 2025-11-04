@@ -8,12 +8,11 @@ let totalPrice = 0;
 
 
 //Creating the Li with the price, product and remove button
-
 addProductButton.addEventListener("click", function () {
   const productName = productNameInput.value.trim(); //creating a variable for name input
   const productPrice = productPriceInput.value.trim();//creating a variable for price input
 
-
+//messages for input
   if (productName === "") {//if product name input is empty
     alert("Please enter an item!"); //give an alert telling user to put one in 
     return;
@@ -23,24 +22,27 @@ addProductButton.addEventListener("click", function () {
       alert("Please enter a price!"); //give an alert telling user to put one in 
       return;
   }
-
   // Creating a variable to create list item
   const li = document.createElement("li");
   li.textContent = productName + " - $" + productPrice;
 
   //creating remove button
-  const addButton = document.createElement("button");
-  addButton.textContent = "Remove";
-  li.appendChild(addButton);
+  
+  
+  const removeButton = document.createElement ("button");
+  removeButton.textContent = "Remove";
+  removeButton.addEventListener("click", function(event){
+    const item = event.target.closest('li');
+    item.remove();
+
+  }
+)
+  
 
   cart.appendChild(li);
+  li.appendChild(removeButton);
+
 });
-
-
-
-
-
-
 
 // Function to update the total price
 function updateTotalPrice(amount) {
@@ -48,10 +50,11 @@ function updateTotalPrice(amount) {
   totalPriceSpan.textContent = totalPrice.toFixed(2);
 }
  
-// Function to remove an item
-function removeItem(event) {
-  const item = event.target.closest('li');
-  const price = parseFloat(item.dataset.price);
-  updateTotalPrice(-price);
-  item.remove();
-}
+ 
+// // Function to remove an item
+// function removeItem(event) {
+//   const item = event.target.closest('li');
+//   const price = parseFloat(item.dataset.price);
+//   updateTotalPrice(-price);
+//   item.remove();
+// }
