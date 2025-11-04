@@ -28,4 +28,11 @@ body {
  
 .cart-item button {
   margin-left: 10px;
+  background-color:#FEC9F1 ;
+}
+
+.add-product{
+margin-left: 10px;
+background-color:#FEC9F1 ;
+
 }

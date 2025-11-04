@@ -35,6 +35,8 @@ addProductButton.addEventListener("click", function () {
   updateTotalPrice(productPrice); //passing the 
   //creating remove button
   const removeButton = document.createElement ("button");
+  removeButton.id = "remove";
+
   removeButton.textContent = "Remove";
   removeButton.addEventListener("click", function(event){
 
@@ -59,10 +61,9 @@ function updateTotalPrice(amount) {
 }
  
  
-// // Function to remove an item
-// function removeItem(event) {
-//   const item = event.target.closest('li');
-//   const price = parseFloat(item.dataset.price);
-//   updateTotalPrice(-price);
-//   item.remove();
-// }
+//Update the quantity of items in the cart, reflecting real-time price changes.
+// const productAmount = document.querySelectorAll('cart');
+// const countItUp = productAmount.length;
+// console.log(countItUp);
+
+
