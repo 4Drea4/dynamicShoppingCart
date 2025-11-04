@@ -2,8 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
   line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
 }
- 
+ h1, h3{
+  color:#D387AB;
+ }
 #product-container {
   display: flex;
   gap: 10px;
@@ -31,8 +37,16 @@ body {
   background-color:#FEC9F1 ;
 }
 
-.add-product{
+#remove , #add-product{
 margin-left: 10px;
 background-color:#FEC9F1 ;
+color: #3B1C3C;
+border-radius: 10px;
+min-height: 40px;
 
+}
+#product-name, #product-price{
+  margin-left: 10px;
+background-color: #E899DC;
+color: #3B1C3C
 }

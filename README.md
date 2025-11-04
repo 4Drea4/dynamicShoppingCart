@@ -12,7 +12,8 @@ I collected the input as strings and obtained the value. I also had issues when 
 4. What challenges did you face when implementing the remove functionality?
 I did not quite understand the syntax, I struggled to implement event delegation into this project. 
 
-
+The Coolers Color Combo In Question:
+https://coolors.co/948d9b-b279a7-d387ab-e899dc-fec9f1
 
 ### Disclaimer:
 Eduart so graciously helped me with understanding the code a bit better.
