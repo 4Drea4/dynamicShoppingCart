@@ -4,6 +4,7 @@ const addProductButton = document.getElementById('add-product');
 const cart = document.getElementById('cart');
 const totalPriceSpan = document.getElementById('total-price');
 const shopList = document.getElementById('list');
+const counter =document.getElementById('item-count');
 
 let totalPrice = 0;
  
@@ -53,6 +54,8 @@ addProductButton.addEventListener("click", function () {
 
     const li = document.createElement("li");
     li.textContent =productName;
+    const li =document.createElement ('li')
+    li.textContent =productPrice;
     const addButton = document.createElement("button");
     addButton.textContent = "Add";
     li.appendChild(addButton);
