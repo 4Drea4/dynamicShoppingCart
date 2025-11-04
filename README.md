@@ -12,3 +12,4 @@ Eduart so graciously helped me with understanding the code a bit better.
 
 
 https://stackoverflow.com/questions/57097805/add-a-button-element-to-each-list-element
+https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode
