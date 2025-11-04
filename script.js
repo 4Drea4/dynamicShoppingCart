@@ -21,7 +21,13 @@ addProductButton.addEventListener("click", function () {
     (productPrice === "") {//if product price input is empty
       alert("Please enter a price!"); //give an alert telling user to put one in 
       return;
-  }
+      //creating a validation so price cant be set to a negative
+  } if 
+   (productPriceInput.value < 0) {
+    alert("Dont be a negative nancy, positive numbers only");
+
+   }
+
   // Creating a variable to create list item
   const li = document.createElement("li");
   li.dataset.price = productPrice ;// for the html data attribute
