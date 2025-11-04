@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="styles.css">
   <title>Dynamic Shopping Cart</title>
 </head>
-
 <body>
   <h1>Dynamic Shopping Cart</h1>
   <div id="product-container">
@@ -14,23 +13,9 @@
     <input type="number" id="product-price" placeholder="Product Price">
     <button id="add-product">Add Product</button>
   </div>
-<!-- Shopping list -->
-    <div class="list-item" id="list-item">
-    <ul class="list"></ul>
-    </div>
-
-<!-- Cart -->
-    <div class="product-container-cart" id="cart-container">
-    <ul class="cart" id="cart"></ul>
-    <h3>Total: $<span id="total-price">0</span></h3>
-    </div>
-
-  <!-- Counter -->
-   <div class="count-items" id="counter">
-    <span class="counter" id="item-count"></span>
-   </div>
+  <ul id="cart"></ul>
+  <h3>Total: $<span id="total-price">0</span></h3>
  
   <script src="script.js"></script>
-
 </body>
 </html>

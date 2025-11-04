@@ -1,10 +1,10 @@
-const productNameInput = document.getElementById('product-name');
-const productPriceInput = document.getElementById('product-price');
-const addProductButton = document.getElementById('add-product');
-const cart = document.getElementById('cart');
-const totalPriceSpan = document.getElementById('total-price');
-const shopList = document.querySelector('.list');
-const counter =document.getElementById('item-count');
+const productNameInput = document.getElementById('product-name');//Where users type in their item
+const productPriceInput = document.getElementById('product-price');//where users enter the price
+const addProductButton = document.getElementById('add-product');//the input button
+const cart = document.getElementById('cart');//the cart we will move items into and track prices
+const totalPriceSpan = document.getElementById('total-price'); //the span where total price will be displayed
+const shopList = document.querySelector('.list');//where we will originally display our items
+const counter =document.getElementById('item-count');//will need to have a sum of these or reflect when things are updated
 
  
 let totalPrice = 0;
@@ -17,11 +17,22 @@ addProductButton.addEventListener('click', () => { //created event listener for 
 
 //creating the new list item 
 const li = document.createElement('li'); //creating the list item
-li.textContent = productName + '$' + itemPrice; //concatenation to store the item and price
+li.textContent = productName + ' $' + itemPrice; //concatenation to store the item and price
+
+
+//creating button on each list item. 
+
+const moveToCart = document.createElement('button');
+//moveToCart.textContent = addToCart; //setting up the button
+moveToCart.appendChild(document.query) 
+
+
 
 // showing list item and price to the screen. 
 shopList.appendChild(li);
 });
+
+
 
 
 // Function to update the total price
