@@ -24,8 +24,9 @@ addProductButton.addEventListener("click", function () {
   }
   // Creating a variable to create list item
   const li = document.createElement("li");
+  li.dataset.price = productPrice ;// for the html data attribute
   li.textContent = productName + " - $" + productPrice;
-
+  updateTotalPrice(productPrice); //passing the 
   //creating remove button
   const removeButton = document.createElement ("button");
   removeButton.textContent = "Remove";
@@ -38,7 +39,6 @@ addProductButton.addEventListener("click", function () {
 
   }
 )
-  
 
   cart.appendChild(li);
   li.appendChild(removeButton);
@@ -47,7 +47,8 @@ addProductButton.addEventListener("click", function () {
 
 // Function to update the total price
 function updateTotalPrice(amount) {
-  totalPrice += amount;
+  // console.log(typeof amount);
+  totalPrice += Number(amount);
   totalPriceSpan.textContent = totalPrice.toFixed(2);
 }
  
