@@ -27,12 +27,13 @@ addProductButton.addEventListener("click", function () {
   li.textContent = productName + " - $" + productPrice;
 
   //creating remove button
-  
-  
   const removeButton = document.createElement ("button");
   removeButton.textContent = "Remove";
   removeButton.addEventListener("click", function(event){
+
     const item = event.target.closest('li');
+    const price = parseFloat(item.dataset.price);
+    updateTotalPrice(-price);   
     item.remove();
 
   }
