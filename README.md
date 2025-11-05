@@ -18,7 +18,9 @@ https://coolors.co/948d9b-b279a7-d387ab-e899dc-fec9f1
 ### Disclaimer:
 Eduart so graciously helped me with understanding the code a bit better.
 
+### Helper Links:
 
-https://stackoverflow.com/questions/57097805/add-a-button-element-to-each-list-element
-https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ul
+## References  
+- [Stack Overflow: Add a button element to each list element](https://stackoverflow.com/questions/57097805/add-a-button-element-to-each-list-element)
+- [MDN: Document createTextNode](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode)
+- [MDN: <ul> Unordered List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ul)
